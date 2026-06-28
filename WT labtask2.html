@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Service Portal</title>
+    <link rel="stylesheet" href="WT Labtask02.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Student Service Portal</h1>
+    <p>Submit your student service requests quickly and easily.</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Available Services</h2>
+
+        <p>
+            The Student Affairs Department provides services such as
+            Transcript Requests, ID Card Issues, and General Inquiries.
+            Please fill out the form below to submit your request.
+        </p>
+    </section>
+
+    <section>
+        <h2>Service Request Form</h2>
+
+        <form>
+
+            <label for="name">Student Name</label>
+            <input
+                type="text"
+                id="name"
+                required
+            >
+
+            <label for="id">Student ID</label>
+            <input
+                type="text"
+                id="id"
+                maxlength="10"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                required
+            >
+
+            <label for="service">Service Type</label>
+
+            <select id="service">
+
+                <option>Transcript Request</option>
+
+                <option>ID Card Issue</option>
+
+                <option>General Inquiry</option>
+
+            </select>
+
+            <label>Urgency Level</label>
+
+            <input type="radio" name="urgency" value="low"> Low
+
+            <input type="radio" name="urgency" value="medium"> Medium
+
+            <input type="radio" name="urgency" value="high"> High
+
+            <br><br>
+
+            <label for="details">Additional Details</label>
+
+            <textarea
+                id="details"
+                rows="5">
+            </textarea>
+
+            <br>
+
+            <button type="Submit">
+                Submit
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 Student Service Portal. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
